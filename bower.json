@@ -10,6 +10,7 @@
     "imagesloaded": "latest",
     "isotope": "latest",
     "gsap": "latest",
+    // "materialize": "latest",
     "ScrollMagic": "latest"
   }
 }
