@@ -1,12 +1,12 @@
-header.header {
+.header {
 	// @include position(absolute, 0 0 null 0);
 	// @include position(fixed, 0 0 null 0);
 	// z-index: 1000;
 	// -webkit-backface-visibility: hidden; 
 	// -webkit-transform: translateZ(0);
 	@include normalize-text;
-	width: 100%;
 	min-height: $header-height-control;
+	width: 100%;
 	.container,
 	.container-sm,
 	.container-fluid {
@@ -14,24 +14,24 @@ header.header {
 	.row {
 		@include flex-row-space-between;
 	}
-	.left,
-	.right {
+	.header-left,
+	.header-right {
 		// width: 50%;
 	}
-	.left,
-	.center,
-	.right {
-		min-height: $header-height-control;
-		@include flex-row-center;
+	.header-left,
+	.header-center,
+	.header-right {
 		@include flex-align-center;
+		@include flex-row-center;
+		min-height: $header-height-control;
 	}
-	.left {
+	.header-left {
 
 	}
-	.center {
+	.header-center {
 		text-align: center;
 	}
-	.right {
+	.header-right {
 		text-align: right;
 	}
 }

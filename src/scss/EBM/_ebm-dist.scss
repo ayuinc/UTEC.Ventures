@@ -1,16 +1,16 @@
-@import "ebm-settings";
+@import "ebm-variables";
 
 @import 
-  "helpers/times-range",
-  "helpers/strip-units",
-  "helpers/px-to-rems",
-  "helpers/rule-of-three",
-  "helpers/prefixer",
-  "helpers/clearfix",
-  "helpers/list-unstyled",
-  "helpers/media-queries",
-  "helpers/vertical-align",
-  "helpers/children-elements",
+  "helpers/ebm-times-range",
+  "helpers/ebm-strip-units",
+  "helpers/ebm-px-to-rems",
+  "helpers/ebm-rule-of-three",
+  "helpers/ebm-prefixer",
+  "helpers/ebm-clearfix",
+  "helpers/ebm-list-unstyled",
+  "helpers/ebm-media-queries",
+  "helpers/ebm-vertical-align",
+  "helpers/ebm-children-elements",
   
   "ebm-box-shadow",
   "ebm-bg-img-control",

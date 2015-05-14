@@ -1,13 +1,10 @@
 /*
-
-  Ayu Consulting Frontend Boilerplate - @MadeByGus
-  ultima actualizacion: 12 de Noviembre 2014
+  Easy Box Model Import
+  Last update: 14.05.15
   Author: @MadeByGus - G. Andres Ibarra yo@soygus.com
-  Desde la consola navega hasta el directorio "stylesheets" y ejecuta: 
 
-  sass --watch main.scss:main.css
-  sass --watch main.scss:main.css -t compressed
-
+  sass --watch style.scss:style.css
+  sass --watch style.scss:style.css -t compressed
 */
 /*========================================
 =          Twitter Bootstrap v3.3.2      =
@@ -2825,24 +2822,14 @@ input[type="button"].btn-block {
     display: none !important;
   }
 }
-/*========================================
-=          GLOBAL SUFIX DEFINITION      =
-========================================*/
 .container-fluid {
   width: 100%;
 }
 
-/* 
+.container-fluid {
+  width: 100%;
+}
 
-  Description: EBM or Easy Box Model allows you to easily edit your UI box model margins and paddings 
-  through the browser inspector "elements" tab and make your elements fit on their parent container without
-  recurring to your CSS too often.
-  
-  Author: @MadeByGus
-  Version: 0.5
-  GitHub: https://github.com/netpoe/EBM.git
-
-*/
 .box-shadow {
   -webkit-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
   -moz-box-shadow: 0px 3px 3px 0px rgba(49, 50, 51, 0.15);
@@ -3803,9 +3790,9 @@ input[type="button"].btn-block {
   -ms-flex-positive: 7;
 }
 
-/*========================================
-=             APP CUSTOM                 =
-========================================*/
+/*
+	App custom
+*/
 /* PROJECT ESPECIFIC FONTS */
 .light {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -12169,16 +12156,16 @@ input[type="submit"].btn.btn-white.btn-icon-custom.btn-lg i,
 }
 
 /* ICON FONTS */
-header.header {
-  width: 100%;
+.header {
   min-height: 70px;
+  width: 100%;
 }
-header.header h1, header.header h2, header.header h3, header.header h4, header.header h5, header.header h6,
-header.header .h1, header.header .h2, header.header .h3, header.header .h4, header.header .h5, header.header .h6,
-header.header p, header.header .p, header.header span, header.header em, header.header strong, header.header label, header.header a, header.header i, header.header ul, header.header ol, header.header li {
+.header h1, .header h2, .header h3, .header h4, .header h5, .header h6,
+.header .h1, .header .h2, .header .h3, .header .h4, .header .h5, .header .h6,
+.header p, .header .p, .header span, .header em, .header strong, .header label, .header a, .header i, .header ul, .header ol, .header li {
   margin: 0;
 }
-header.header .row {
+.header .row {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -12206,10 +12193,18 @@ header.header .row {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-header.header .left,
-header.header .center,
-header.header .right {
-  min-height: 70px;
+.header .header-left,
+.header .header-center,
+.header .header-right {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  box-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -12236,20 +12231,12 @@ header.header .right {
   -o-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center;
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  box-align: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  -ms-flex-align: center;
+  min-height: 70px;
 }
-header.header .center {
+.header .header-center {
   text-align: center;
 }
-header.header .right {
+.header .header-right {
   text-align: right;
 }
 
