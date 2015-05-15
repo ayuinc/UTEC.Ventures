@@ -36,3 +36,8 @@ text-shadow:
 	0 // Eje x
 	1px // Eje Y
 	0; // Blur
+
+// CLICKABLE DIV
+[data-href]{
+	cursor: pointer;
+}
