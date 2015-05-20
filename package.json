@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/netpoe/ebm_boilerplate.git"
+    "url": "http://github.com/netpoe/EasyBoxModel.git"
   },
   "devDependencies": {
     "bower": "latest",
