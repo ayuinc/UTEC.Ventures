@@ -1,3 +1,8 @@
+/*
+	Header
+*/
+$header-height-control: 112px; // Header
+$tool-bar-height-control: 56px; // Header
 .header {
 	// @include position(absolute, 0 0 null 0);
 	// @include position(fixed, 0 0 null 0);
@@ -6,6 +11,7 @@
 	// -webkit-transform: translateZ(0);
 	@include normalize-text;
 	min-height: $header-height-control;
+	background-color: $gray-darker;
 	width: 100%;
 	.container,
 	.container-sm,
@@ -21,59 +27,110 @@
 	.header-left,
 	.header-center,
 	.header-right {
-		@include flex-align-center;
-		@include flex-row-center;
+		@include flex-column-center;
 		min-height: $header-height-control;
 	}
 	.header-left {
-
+		
 	}
 	.header-center {
 		text-align: center;
 	}
 	.header-right {
+		@include flex-align-end;
 		text-align: right;
 	}
+	.header-nav-center {
+		a {
+			@include light;
+			font-size: $font-size-h4;
+			display: inline-block;
+			position: relative;
+			margin-right: 21px;
+			margin-right: rem(21px);
+			padding: 4px 9px;
+			color: white;
+			&:hover,
+			&.active {
+				background-color: white;
+				text-decoration: none;
+				color: $gray-darker;
+			}
+			&:after {
+			  @include position(absolute, 9px -11px null null);
+			  background-color: white;
+			  display: inline-block;
+			  height: 14px;
+				content: "";
+			  width: 1px;
+			}
+			&:last-child {
+				&:after {
+					background-color: transparent;
+				}
+			}
+		}
+	}
 }
-// Uncomment for fixed-header on scroll funcionality
-// header.header-fixed {
-// 	@extend header.header;
-// 	@include box-shadow(0 1px 1px 0px rgba($gray-light, 0.3));
-// 	@include position(fixed, 0 0 null 0);
-// 	@include transform(translateY(-100%));
-// 	@include transition(all 0.2s ease-in-out);
-// 	z-index: 1000;
-// 	-webkit-backface-visibility: hidden; 
-// 	background-color: white;
-// 	min-height: $header-height-control;
-// 	.left,
-// 	.center,
-// 	.right {
-// 		min-height: $header-height-control;
-// 	}
-// 	.right {
-// 		nav {
-// 			a {
-// 				color: $gray-dark;
-// 				&:hover,
-// 				&.active {
-// 					color: $gray-darker;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
 
-// .site-wrapper {
-// 	&.header-fixed {
-// 		.header-fixed {
-// 			@include transform(translateY(0));
-// 			@include transition(all 0.2s ease-in-out);
-// 			-webkit-transform: translateZ(0);
-// 		}
-// 		.header {
-// 			@include transform(translateY(-100%));
-// 			@include transition(all 0.2s ease-in-out);
-// 		}
-// 	}
-// }
+/*
+	Tool bar
+*/
+.tool-bar {
+	@extend .header;
+	background-color: $gray-lighter;
+	height: $tool-bar-height-control;
+	min-height: $tool-bar-height-control;
+	.tool-bar-left,
+	.tool-bar-right {
+		min-height: $tool-bar-height-control;
+	}
+	.tool-bar-left {
+		@include flex-column-center;
+	}
+	.tool-bar-right {
+		@include flex-align-center;
+		@include flex-row-end;
+	}
+	.tool-bar-nav-left,
+	.tool-bar-nav-right {
+		a:not(.btn) {
+			margin-right: 7px;
+			color: $gray;
+			&:hover,
+			&.active {
+				color: $gray-dark;
+			}
+		}
+	}
+	.tool-bar-nav-right,
+	.tool-bar-search-form {
+		display: inline-block;
+	}
+	.tool-bar-search-form {
+		width: 350px;
+	}
+	.tool-bar-nav-right {
+		margin-left: $container-fluid;
+		.btn {}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

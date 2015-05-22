@@ -8,18 +8,18 @@ $bootstrap-sass-asset-helper: false !default;
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #3E3F40 !default;
-$gray-darker:            #3E3F40 !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
-$gray:                   #7D7E7F !default; // #555
-$gray-light:             lighten($gray-base, 46.7%) !default; // #777
-$gray-lighter:           #F0F0F0 !default; // #eee
+$gray-base:              #000 !default;
+$gray-darker:            #191919 !default; // #222
+$gray-dark:              #323232 !default;   // #333
+$gray:                   #8f8d8e !default; // #555
+$gray-light:             #e3e3e3 !default; // #777
+$gray-lighter:           #f1f1f1 !default; // #eee
 
-$brand-primary:         darken(#428bca, 6.5%) !default;
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:         #00BFDF !default;
+$brand-success:         #8DC63F !default;
+$brand-info:            #2E4372 !default;
+$brand-warning:         #FFDD00 !default;
+$brand-danger:          #DD5341 !default;
 
 $blue-base: #3A4959;
 
@@ -149,14 +149,14 @@ $link-color:            $brand-primary !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
-$link-hover-decoration: underline !default;
+$link-hover-decoration: none !default;
 
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "museo-sans", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
@@ -220,9 +220,9 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
-$border-radius-large:       6px !default;
-$border-radius-small:       3px !default;
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
@@ -458,7 +458,7 @@ $container-md:                 $container-desktop !default;
 // Large screen / wide desktop
 $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
-$container-lg:                 $container-desktop !default;
+$container-lg:                 $container-large-desktop !default;
 
 
 //== Navbar
