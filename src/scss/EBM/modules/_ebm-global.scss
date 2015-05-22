@@ -19,3 +19,23 @@ body {
 .site-content {
 	position: relative;
 }
+.content-border{
+	border: 1px solid #ccc;
+  padding: 30px 17px;
+  height: 179px;
+  width: 378px;
+}
+.content-img-portafolio-grid > img,
+.content-img-blog > img{
+	width: 100%;
+}
+.button-border{
+  border: 1px solid gray;
+  height: 45px;
+  width: 214px;
+}
+.content-text-blog-border{
+  border: 1px solid #ccc;
+  height: 185px;
+  padding: 4%;
+}

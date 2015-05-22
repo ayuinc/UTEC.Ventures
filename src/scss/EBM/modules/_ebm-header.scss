@@ -1,8 +1,8 @@
 /*
 	Header
 */
-$header-height-control: 112px; // Header
-$tool-bar-height-control: 56px; // Header
+$header-height-control: 97px; // Header
+$tool-bar-height-control: 43px; // Header
 .header {
 	// @include position(absolute, 0 0 null 0);
 	// @include position(fixed, 0 0 null 0);
@@ -57,10 +57,10 @@ $tool-bar-height-control: 56px; // Header
 				color: $gray-darker;
 			}
 			&:after {
-			  @include position(absolute, 9px -11px null null);
-			  background-color: white;
+			  @include position(absolute, 5px -11px null null);
+			  background-color: #8f8d8e;
 			  display: inline-block;
-			  height: 14px;
+			  height: 23px;
 				content: "";
 			  width: 1px;
 			}
