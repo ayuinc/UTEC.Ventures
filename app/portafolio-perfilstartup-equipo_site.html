@@ -282,35 +282,23 @@
         </div>
       </div>
     </div>  <!-- END:Footer -->
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52f279493184b19f" async="async"></script>
-    <script src="js/app/vendor/jquery-2.1.1.min.js"></script>
-    <script src="js/app/vendor/TweenMax.min.js"></script>
-    <script src="js/app/vendor/ScrollToPlugin.min.js"></script>
-    <script src="js/app/vendor/jquery.scrollmagic.min.js"></script>
-    <!-- // <script src="js/app/vendor/tickerscrambler.min.js"></script> -->
-    <script src="js/app/vendor/ScrambleTextPlugin.min.js"></script>
-
-    <!-- 
-    <script src="js/app/vendor/jquery.scrollmagic.debug.js"></script>
-    -->
-    <!-- DEVELOPMENT & PRODUCTION SCRIPTS
-    *Compress scripts on production
-    -->
-    <!--<script src="js/lib/modal.js"></script>-->
-    <script src="js/b3/modal.js"></script>
-    <script src="js/app/lib/login-option.js"></script>
-    <script src="js/app/lib/nav-control.js"></script>
-    <script src="js/app/lib/layout-control.js"></script>
-    <script src="js/app/lib/scroll-control.js"></script>
-    <script src="js/app/lib/videojs.js"></script>
-    <script src="js/app/lib/tickerscrambler.js"></script>
-    <script>
-      $('a.smooth').click(function(e){
-        e.preventDefault();
-        $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
-      });
-    </script>
-    <script src="assets/js/jquery.min.js"></script> <!-- App scripts -->
-    <script src="assets/js/scripts.min.js"></script>
+     <script src="assets/js/jquery.min.js"></script> <!-- App scripts -->
+     <script src="assets/js/scripts.min.js"></script>
+     <script>
+       $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                  $('html,body').animate({
+                    scrollTop: target.offset().top
+                  }, 1000);
+                  return false;
+                }
+              }
+            });
+       });
+      </script>
   </body>
 </html>

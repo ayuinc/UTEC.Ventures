@@ -44,6 +44,12 @@ body {
 .user-picture > img {
     border-radius: 50%;
 }
-svg{
-  color: white;
+.pagination-custom{
+  border: 1px solid white!important;
+  margin-left: 0 !important;
+  &:hover{
+    border: 1px solid $brand-primary !important;
+    background-color: white !important;
+    color: $brand-primary;
+  }
 }
