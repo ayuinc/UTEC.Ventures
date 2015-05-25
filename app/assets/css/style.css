@@ -4967,6 +4967,7 @@ body::-webkit-scrollbar {
   width: 378px;
 }
 
+.image-content-espacio-fisico > img,
 .logo-sponsors-home > img,
 .content-img-portafolio-grid > img,
 .content-img-blog > img {
