@@ -4986,6 +4986,14 @@ body::-webkit-scrollbar {
   padding: 4%;
 }
 
+.user-picture > img {
+  border-radius: 50%;
+}
+
+svg {
+  color: white;
+}
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,
