@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <script src="//use.typekit.net/fct8sgn.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
     <link href="assets/css/ebm.css" rel="stylesheet">
   </head>
@@ -29,9 +30,9 @@
             <div class="tool-bar-right col-sm-8">
               <form class="tool-bar-search-form">
                 <div class="input-group">
-                  <input type="text" class="form-control input-sm" placeholder="Search for...">
+                  <input type="text" id="search_bar" class="form-control input-sm" placeholder="Search for...">
                   <span class="input-group-btn">
-                    <button class="btn btn-gray btn-sm" type="button">Buscar</button>
+                    <button disabled="disabled" id="search_button" class="btn btn-gray btn-sm" type="button">Buscar</button>
                   </span>
                 </div>
               </form>
@@ -69,7 +70,7 @@
         <div class="container-md text-center pv-70">
           <h2 class="light text-white ">Error 404 </h2>
           <div class="pb-14">
-            <span class="text-white thin h4">La página que buscas no existe.</span> <a class=" thin h4 text-primary" href="index.html">Regresa al Inicio</a>
+            <span class="text-white thin h4">La página que buscas no existe.</span> <a class=" thin h4 text-primary" href="index.html">Regresa al Inicio <span>&#x2192;</span></a>
           </div>
           <div class="flex-row-center">
             <ul class="grid-list-6 text-left text-white">
@@ -83,7 +84,7 @@
       </section>
     </div>
     <div class="footer"> <!-- FOOTER -->
-      <div class="site-map pv-14 bg-gray-dark hidden-xs">
+      <div class="site-map pt-35 bg-gray-dark hidden-xs">
           <div class="container">
             <div class="col-sm-2">
               <ul class="list-unstyled text-gray-lighter">

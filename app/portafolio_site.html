@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <script src="//use.typekit.net/fct8sgn.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
     <link href="assets/css/ebm.css" rel="stylesheet">
   </head>
@@ -29,9 +30,9 @@
             <div class="tool-bar-right col-sm-8">
               <form class="tool-bar-search-form">
                 <div class="input-group">
-                  <input type="text" class="form-control input-sm" placeholder="Search for...">
+                  <input type="text" id="search_bar" class="form-control input-sm" placeholder="Search for...">
                   <span class="input-group-btn">
-                    <button class="btn btn-gray btn-sm" type="button">Buscar</button>
+                    <button disabled="disabled" id="search_button" class="btn btn-gray btn-sm" type="button">Buscar</button>
                   </span>
                 </div>
               </form>
@@ -68,7 +69,7 @@
       <section class="hero-unit flex-column-end" style="background-image: url(assets/img/portafolio.jpg)">
         <div class="container-md text-center pv-70">
           <h2 class="light text-white ">Portafolio</h2>
-          <span class="thin text-white h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fuga minima illo. Molestias, error, soluta nemo totam quo facere. Eius modi, similique distinctio minima quod nemo dolorem in repellendus at.</span>>
+          <span class="thin text-white h4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor fuga minima illo. Molestias, error, soluta nemo totam quo facere. Eius modi, similique distinctio minima quod nemo dolorem in repellendus at.</span>
         </div>
         <div class="scroll-down"><div><a id="arrow" href="#site-portafolio"><i class="icon-chevron-down"></i></a></div></div>
       </section>
@@ -83,8 +84,8 @@
             <div class="col-md-9 mt-70 pt-35 pl-0">
               <div class="content-text-blog-border text-left">
                 <h4 class="text-primary thin">Nombre del Proyecto 1</h4>
-                <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br>  
-                <a class="thin" href="#">Leer Mas</a>
+                <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br><br>  
+                <a class="thin" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
             <div class="col-md-3 mt-7 pr-0 flex-row-center "> 
@@ -95,8 +96,8 @@
             <div class="col-md-9 mt-21 pl-0">
               <div class="content-text-blog-border text-left">
                 <h4 class="text-primary thin">Nombre del Proyecto 2</h4>
-                <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br>  
-                <a class="thin" href="#">Leer Mas</a>
+                <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br><br>  
+                <a class="thin" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
             <div class="col-md-3 mt-7 pr-0 flex-row-center "> 
@@ -107,8 +108,8 @@
             <div class="col-md-9 mt-21 pl-0">
               <div class="content-text-blog-border text-left">
                 <h4 class="text-primary thin">Nombre del Proyecto 3</h4>
-                <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br>  
-                <a class="thin" href="#">Leer Mas</a>
+                <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br><br>  
+                <a class="thin" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
             <div class="col-md-3 mt-7 pr-0 flex-row-center "> 
@@ -119,8 +120,8 @@
             <div class="col-md-9 mt-21 pl-0">
               <div class="content-text-blog-border text-left">
                 <h4 class="text-primary thin">Nombre del Proyecto 4</h4>
-                <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br>  
-                <a class="thin" href="#">Leer Mas</a>
+                <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br><br>  
+                <a class="thin" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
             <div class="col-md-3 mt-7 pr-0 flex-row-center "> 
@@ -132,7 +133,7 @@
               <div class="content-text-blog-border text-left">
                 <h4 class="text-primary thin">Nombre del Proyecto 5</h4>
                 <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br>  
-                <a class="thin" href="#">Leer Mas</a>
+                <a class="thin" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
             <div class="col-md-3 mt-7 pr-0 flex-row-center "> 
@@ -144,7 +145,7 @@
               <div class="content-text-blog-border text-left">
                 <h4 class="text-primary thin">Nombre del Proyecto 6</h4>
                 <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br>  
-                <a class="thin" href="#">Leer Mas</a>
+                <a class="thin" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
           </div>
@@ -186,7 +187,7 @@
       </section>
     </div>
     <div class="footer"> <!-- FOOTER -->
-      <div class="site-map pv-14 bg-gray-dark hidden-xs">
+      <div class="site-map pt-35 bg-gray-dark hidden-xs">
           <div class="container">
             <div class="col-sm-2">
               <ul class="list-unstyled text-gray-lighter">
@@ -270,6 +271,7 @@
               }
             });
        });
-      </script>
+    </script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52f279493184b19f" async="async"></script>
   </body>
 </html>

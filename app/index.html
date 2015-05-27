@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <script src="//use.typekit.net/fct8sgn.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
     <link href="assets/css/ebm.css" rel="stylesheet">
   </head>
@@ -29,9 +30,9 @@
             <div class="tool-bar-right col-sm-8">
               <form class="tool-bar-search-form">
                 <div class="input-group">
-                  <input type="text" class="form-control input-sm" placeholder="Search for...">
+                  <input type="text" id="search_bar" class="form-control input-sm" placeholder="Search for...">
                   <span class="input-group-btn">
-                    <button class="btn btn-gray btn-sm" type="button">Buscar</button>
+                    <button disabled="disabled" id="search_button" class="btn btn-gray btn-sm" type="button">Buscar</button>
                   </span>
                 </div>
               </form>
@@ -68,44 +69,44 @@
       <section class="hero-unit flex-column-end" style="background-image: url(assets/img/index.jpg)">
         <div class="container-md text-center pv-70">
           <h2 class="light text-white ">UTEC Ventures lanza su primera convocatoria <br> para proyectos de base tecnológica</h2>
-          <a href="#" class="btn btn-lg btn-primary">Participar</a>
+          <a href="#" class="btn btn-lg btn-primary thin">Participar</a>
         </div>
         <div class="scroll-down"><div><a id="arrow" href="#site-content"><i class="icon-chevron-down"></i></a></div></div>
       </section>
       <section class="site-content flex-row-center text-center" id="site-content">
         <div class="container-lg">
-          <h3 class="text-primary pt-70 pb-14 thin">Porque UTEC Ventures</h3>
+          <h3 class="text-primary pt-70 pb-14 light">Porque UTEC Ventures</h3>
           <h4 class="text-gray thin text-center"> Dos veces al año, UTEC lanzará convocatorias para selecionar startups y  <br> brindarles servicios de aceleración que incluye una inversión de hasta 32$ mil.</h4>
           <div class="container-lg pv-35 thin">
             <div class="row">
               <div class="col-sm-6 mb-21">
                 <div class="content-border">
-                  <h4 class="text-gray">Espacio Fisico</h4>
-                  <span class="text-gray">Las startups seleccionadas contarán con un espacio de trabajo durante los 6 meses que dura ael programa de aceleración</span><br>
-                  <a href="">Lee mas</a>
+                  <h4 class="text-gray-darker light">Espacio Fisico</h4>
+                  <span class="text-gray">Las startups seleccionadas contarán con un <br> espacio de trabajo durante los 6 meses que <br> dura ael programa de aceleración</span><br><br>
+                  <a href="">Lee mas <span>&#187;</span></a>
                 </div>
               </div>
               <div class="col-sm-6 mb-21">
                 <div class="content-border">
-                  <h4 class="text-gray">Asesoría</h4>
-                  <span class="text-gray">Los emprendedores recibirán asesoría para afinar sus propuestas de negocio, crear un prototipo funcionales para salir a buscar la tracción necesaria</span><br>
-                  <a href="">Leer mas</a>
+                  <h4 class="text-gray-darker light">Asesoría</h4>
+                  <span class="text-gray">Los emprendedores recibirán asesoría para afinar sus propuestas de negocio, crear un prototipo funcionales para salir a buscar la tracción necesaria</span><br><br>
+                  <a href="">Leer mas <span>&#187;</span></a>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 mb-21">
                 <div class="content-border">
-                  <h4 class="text-gray">Herramientas y Contactos</h4>
-                  <span class="text-gray">Nos encargaremos de proveer las herramientas y contactos necesarios para el exito de cada una de las startups aceleradas</span><br>
-                  <a href="">Leer mas</a>
+                  <h4 class="text-gray-darker light">Herramientas y Contactos</h4>
+                  <span class="text-gray">Nos encargaremos de proveer las <br> herramientas y contactos necesarios para el <br> exito de cada una de las startups aceleradas</span><br><br>
+                  <a href="">Leer mas <span>&#187;</span></a>
                 </div>
               </div>
               <div class="col-sm-6 mb-21">
                 <div class="content-border">
-                  <h4 class="text-gray">Comunidad</h4>
-                  <span class="text-gray">La comunidad que estamos crando servirá para crecer mucho más allá del proceso de aceleración</span> <br>
-                  <a href="">Leer mas</a>
+                  <h4 class="text-gray-darker light">Comunidad</h4>
+                  <span class="text-gray">La comunidad que estamos crando servirá<br> para crecer mucho más allá del <br> proceso de aceleración</span> <br><br>
+                  <a href="">Leer mas <span>&#187;</span></a>
                 </div>
               </div>
             </div>
@@ -114,7 +115,7 @@
       </section>
       <section class=" site-portafolio flex-row-center text-center pb-21 mb-70">
         <div class="container">
-          <h3 class="text-primary pt-70 pb-14 thin">Portafolio</h3>
+          <h3 class="text-primary pt-70 pb-28 light">Portafolio</h3>
           <div class="row">
             <div class="col-sm-3">
               <div class="content-img-portafolio-grid">
@@ -122,8 +123,8 @@
               </div>
               <div class="col-sm-10 text-content-portafolio text-left">
                 <h4 class="thin mt-28">Nombre del Proyecto</h4>
-                <span class="thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
-                <a class="thin" href="#">Leer Mas</a>
+                <span class="thin text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
+                <a class="thin" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
             <div class="col-sm-3">
@@ -132,8 +133,8 @@
               </div>
               <div class="col-sm-10 text-content-portafolio text-left">
                 <h4 class="thin mt-28">Nombre del Proyecto</h4>
-                <span class="thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
-                <a class="thin" href="#">Leer Mas</a>
+                <span class="thin text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
+                <a class="thin" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
             <div class="col-sm-3">
@@ -142,8 +143,8 @@
               </div>
               <div class="col-sm-10 text-content-portafolio text-left">
                 <h4 class="thin mt-28">Nombre del Proyecto</h4>
-                <span class="thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
-                <a class="thin mt-28" href="#">Leer Mas</a>
+                <span class="thin text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
+                <a class="thin mt-28" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
             <div class="col-sm-3">
@@ -152,15 +153,15 @@
               </div>
               <div class="col-sm-10 text-content-portafolio text-left">
                 <h4 class="thin mt-28">Nombre del Proyecto</h4>
-                <span class="thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
-                <a class="thin mt-28" href="#">Leer Mas</a>
+                <span class="thin text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ab, nesciunt fugiat maxime velit minima tenetur commodi culpa aliquam.</span><br><br>
+                <a class="thin mt-28" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
           </div> 
           <div class="row ">
             <div class="col-sm-12 mt-35 flex-row-center ">
               <div class="button-border">
-                <a class="mt-7 btn thin text-gray" href=""> Ver todos los proyectos</a>
+                <a class="mt-7 btn thin text-gray" href=""> Ver todos los proyectos <span>&#187;</span></a>
               </div>
             </div>
           </div>
@@ -169,21 +170,27 @@
       </section>
       <section class="site-blog bg-gray-lighter text-center">
         <div class="container">
-          <h2 class="text-gray pt-70 pb-14 thin">Blog</h2>
-          <h4 class="text-gray thin text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, commodi, iusto. Aliquid at accusamus nobis inventore illo facere eos, accusantium nihil possimus.</h4>
+          <h2 class="text-gray-dark pt-70 pb-14 light">Blog</h2>
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <h4 class="text-gray thin text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, commodi, iusto. Aliquid at accusamus nobis inventore illo facere eos, accusantium nihil possimus.</h4>
+            </div>
+            <div class="col-sm-2"></div>
+          </div>
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-md-3 mt-70 pr-0 flex-row-center "> 
+            <div class="col-md-3 mt-35 pr-0 flex-row-center "> 
               <div class="content-img-blog mt-35">
                 <img src="assets/img/mac1.jpg" alt="">
               </div>
             </div>
-            <div class="col-md-9 mt-70 pt-35 pl-0">
+            <div class="col-md-9 mt-35 pt-35 pl-0">
               <div class="content-text-blog-border text-left">
-                <h4 class="text-gray thin">Titulo del Articulo</h4>
-                <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br>  
-                <a class="thin" href="#">Leer Mas</a>
+                <h4 class="text-primary thin">Titulo del Articulo</h4>
+                <span class="text-gray-dark thin ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br><br>  
+                <a class="thin" href="#">Leer Mas <span>&#187;</span></a>
               </div>
             </div>
             <div class="col-md-3 mt-7 pr-0 flex-row-center "> 
@@ -193,25 +200,31 @@
             </div>
             <div class="col-md-9 mt-21 pl-0">
               <div class="content-text-blog-border text-left">
-                <h4 class="text-gray thin">Titulo del Articulo</h4>
-                <span class="text-gray thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br>  
-                <a class="thin" href="#">Leer Mas</a>
+                <h4 class="text-primary thin">Titulo del Articulo</h4>
+                <span class="text-gray-dark thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciunt.</span><br><br>  
+                <a class="thin" href="#">Leer Mas <span>&#187;</span></a>
               </div>
-                <a class="mt-7 btn thin text-gray" href=""> Ver todos los proyectos<p class="pl-7 m-0 icon-arrows-right h6 inline-block"></p></a>
-              </div>
-            </div>
-          </div> 
             </div>
           </div>
           <div class="row pb-42 mb-49 ">
             <div class="col-sm-12 mt-35 flex-row-center ">
               <div class="button-border ">
+                <a class="mt-7 btn thin text-gray" href="">Leer Todos <span>&#187;</span></a>
+              </div>
+            </div>
+          </div> 
         </div>
       </section>
       <section class="section-sponsors mb-70 pb-21">
         <div class="container text-center">
           <h2 class="text-primary pt-70 pb-14 thin">Sponsors</h2>
-          <h4 class="text-gray thin text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, commodi, iusto. Aliquid at accusamus nobis inventore illo facere eos, accusantium nihil possimus.</h4>
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+              <h4 class="text-gray thin text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, commodi, iusto. Aliquid at accusamus nobis inventore illo facere eos, accusantium nihil possimus.</h4>
+            </div>
+            <div class="col-sm-2"></div>
+          </div>
         </div>
         <div class="container-md mt-70">
           <div class="row">
@@ -287,9 +300,9 @@
           <a href="postulacion_site.html" class="btn btn-lg btn-primary thin">Comienza aquí</a>
         </div>        
       </section>
-    </div>
+    </div><!-- END: Body -->
     <div class="footer"> <!-- FOOTER -->
-      <div class="site-map pv-14 bg-gray-dark hidden-xs">
+      <div class="site-map pt-35 bg-gray-dark hidden-xs">
           <div class="container">
             <div class="col-sm-2">
               <ul class="list-unstyled text-gray-lighter">
@@ -373,6 +386,7 @@
               }
             });
        });
-      </script>
+    </script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52f279493184b19f" async="async"></script>
   </body>
 </html>

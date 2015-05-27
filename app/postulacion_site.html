@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="assets/img/favicon.png">
     <script src="//use.typekit.net/fct8sgn.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link href="assets/css/style.css" rel="stylesheet"> <!-- App styles -->
     <link href="assets/css/ebm.css" rel="stylesheet">
   </head>
@@ -29,9 +30,9 @@
             <div class="tool-bar-right col-sm-8">
               <form class="tool-bar-search-form">
                 <div class="input-group">
-                  <input type="text" class="form-control input-sm" placeholder="Search for...">
+                  <input type="text" id="search_bar" class="form-control input-sm" placeholder="Search for...">
                   <span class="input-group-btn">
-                    <button class="btn btn-gray btn-sm" type="button">Buscar</button>
+                    <button disabled="disabled" id="search_button" class="btn btn-gray btn-sm" type="button">Buscar</button>
                   </span>
                 </div>
               </form>
@@ -120,7 +121,7 @@
                 <div class="col-sm-6 mt-21">
                   <input class="input-form-postulacion" type="text" placeholder=""> 
                 </div>
-                <a href="#" type="submit" name="submit" class="mt-35 mb-70 btn btn-lg button-send-size-postulacion btn-primary thin">Enviar</a>
+                <a href="#" type="submit" name="submit" class="mt-35 mb-70 btn btn-lg button-cta btn-primary thin">Enviar</a>
               </div>
             </form>
           </div>
@@ -135,7 +136,7 @@
       </section>
     </div>
     <div class="footer"> <!-- FOOTER -->
-      <div class="site-map pv-14 bg-gray-dark hidden-xs">
+      <div class="site-map pt-35 bg-gray-dark hidden-xs">
           <div class="container">
             <div class="col-sm-2">
               <ul class="list-unstyled text-gray-lighter">
@@ -220,6 +221,7 @@
               }
             });
        });
-      </script>
+    </script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52f279493184b19f" async="async"></script>
   </body>
 </html>
