@@ -52,9 +52,8 @@ $tool-bar-height-control: 43px; // Header
 			color: white;
 			&:hover,
 			&.active {
-				background-color: white;
+				color: white !important;
 				text-decoration: none;
-				color: $gray-darker;
 			}
 			&:after {
 			  @include position(absolute, 5px -11px null null);
@@ -81,6 +80,7 @@ $tool-bar-height-control: 43px; // Header
 	background-color: $gray-lighter;
 	height: $tool-bar-height-control;
 	min-height: $tool-bar-height-control;
+	font-size:12px;
 	.tool-bar-left,
 	.tool-bar-right {
 		min-height: $tool-bar-height-control;
