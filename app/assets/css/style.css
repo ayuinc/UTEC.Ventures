@@ -5848,6 +5848,11 @@ body::-webkit-scrollbar {
   font-weight: 100;
 }
 
+/*OPACITY IMG*/
+.op-08 {
+  opacity: 0.8;
+}
+
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,
