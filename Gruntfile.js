@@ -48,7 +48,7 @@ module.exports = function (grunt) {
         '<%= project.src %>/scss/ebm.scss'
       ],
       js: [
-        '<%= project.src %>/js/lib/*.js'
+        '<%= project.src %>/js/lib/**/*.js'
       ],
       coffee: [
         '<%= project.src %>/coffee/*.coffee'
@@ -136,18 +136,18 @@ module.exports = function (grunt) {
      * https://github.com/gruntjs/grunt-contrib-concat
      * Imports all .js files and appends project banner
      */
-    // concat: {
-    //   dev: {
-    //     files: {
-    //       '<%= project.src %>/js/scripts.min.js': '<%= project.js %>'
-    //     }
-    //   },
-    //   options: {
-    //     stripBanners: true,
-    //     nonull: true,
-    //     banner: '<%= tag.banner %>'
-    //   }
-    // },
+    concat: {
+      dev: {
+        files: {
+          '<%= project.src %>/js/scripts.min.js': '<%= project.js %>'
+        }
+      },
+      options: {
+        stripBanners: true,
+        nonull: true,
+        banner: '<%= tag.banner %>'
+      }
+    },
 
     /**
      * Uglify (minify) JavaScript files
@@ -163,6 +163,10 @@ module.exports = function (grunt) {
         files: {
           // '<%= project.assets %>/js/scripts.min.js': '<%= project.js %>', 
           '<%= project.assets %>/js/scripts.min.js': [
+            '<%= project.src %>/js/lib/html5shiv.min.js',
+            '<%= project.src %>/js/lib/modernizr.js',
+            '<%= project.src %>/js/lib/respond.min.js',
+            '<%= project.src %>/js/lib/app.js',
             // '<%= project.src %>/js/lib/TweenMax.min.js',
             // '<%= project.src %>/js/lib/ScrollToPlugin.js',
             // '<%= project.src %>/js/lib/ScrollMagic.js',
@@ -379,10 +383,10 @@ module.exports = function (grunt) {
      * Livereload the browser once complete
      */
     watch: {
-      // concat: {
-      //   files: '<%= project.src %>/js/{,*/}*.js',
-      //   tasks: ['concat:dev', 'jshint']
-      // },
+      concat: {
+        files: '<%= project.src %>/js/{,*/}*.js',
+        tasks: ['concat:dev', 'jshint']
+      },
       uglify: {
         files: '<%= project.src %>/js/lib/*.js',
         tasks: ['uglify']
@@ -425,11 +429,11 @@ module.exports = function (grunt) {
     // 'coffee:dev',
     // 'sass:ebm',
     'sass:dev',
-    // 'bower:dev',
+    'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
     // 'jshint',
-    // 'concat:dev',
+    'concat:dev',
     // 'responsive_images:dev',
     // 'responsive_images_extender:dev',
     'connect:livereload',

@@ -5849,10 +5849,12 @@ body::-webkit-scrollbar {
 }
 
 /*OPACITY IMG*/
-.op-08 {
-  opacity: 0.8;
+.op-rgba {
+  background-color: black;
+  opacity: 0.1;
 }
 
+/*RESPONSIVE*/
 a.btn.form-control,
 button.btn.form-control,
 input[type="submit"].btn.form-control,
@@ -17354,6 +17356,17 @@ html.no-js .flex-space-between .right {
 }
 .header .header-nav-center a:last-child:after, .tool-bar .header-nav-center a:last-child:after {
   background-color: transparent;
+}
+
+.header-scroll {
+  position: fixed;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+  z-index: 10;
+  top: 0;
+}
+.header-scroll.active {
+  opacity: 1;
 }
 
 /*

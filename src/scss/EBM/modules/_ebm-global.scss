@@ -111,6 +111,20 @@ body {
   font-weight: 100;
 }
 /*OPACITY IMG*/
-.op-08{
-  opacity: 0.8;
+.op-rgba{
+  background-color:black; 
+  opacity: 0.1;
+}
+/*RESPONSIVE*/
+@media screen and (max-width:$screen-phone) { 
+
+}
+@media screen and (max-width:769px) {
+
+}
+@media screen and (max-width:1025px){
+
+}
+@media screen and (max-width:1309px){
+
 }
