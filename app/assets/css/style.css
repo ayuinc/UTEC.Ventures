@@ -5757,6 +5757,7 @@ body::-webkit-scrollbar {
 }
 
 /*CONTENT STYLES*/
+.logo-sponsors-home-color > img,
 .image-content-espacio-fisico > img,
 .logo-sponsors-home > img,
 .content-img-portafolio-grid > img,
@@ -5852,6 +5853,38 @@ body::-webkit-scrollbar {
 .op-rgba {
   background-color: black;
   opacity: 0.1;
+}
+
+/*SPONSORS FUNCTION*/
+.logo-sponsors-home img {
+  opacity: 0.8;
+}
+
+.logo-sponsors-home img {
+  filter: url("#grayscale");
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: Gray();
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.logo-sponsors-home img:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 /*RESPONSIVE*/
