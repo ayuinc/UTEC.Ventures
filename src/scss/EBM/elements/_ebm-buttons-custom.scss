@@ -38,6 +38,7 @@ input[type="submit"].btn,
 			color: white;
 			&:hover {
 				background: #{darken(nth($social-colors-list, $i), 14%)};
+    		transition: 0.3s all ease-in-out;
 			}
 		}
 	}
@@ -57,6 +58,7 @@ input[type="submit"].btn,
 				background-color: #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
 				color: darken(white, 3%);
 				border-color: #{darken(nth($grayscale-list, $i), 3%)};
+    		transition: 0.3s all ease-in-out;
 			}
 		}
 	}
@@ -70,6 +72,7 @@ input[type="submit"].btn,
 				background-color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
 				color: darken(white, 3%);
 				border-color: #{darken(nth($brand-colors-list, $i), 3%)};
+    		transition: 0.3s all ease-in-out;
 			}
 		}
 	}
@@ -84,6 +87,7 @@ input[type="submit"].btn,
 				background: none;
 				border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
 				color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+    		transition: 0.3s all ease-in-out;
 			}
 		}
 	}
@@ -97,6 +101,7 @@ input[type="submit"].btn,
 				background: none;
 				border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
 				color: #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+				transition: 0.3s all ease-in-out;
 			}
 		}
 	}
@@ -113,6 +118,7 @@ input[type="submit"].btn,
 				@include box-shadow(0px 2px 0px 0px #{darken(nth($brand-colors-list, $i), 15%)});
 				// border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
 				// color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+		    transition: 0.3s all ease-in-out;
 			}
 		}
 	}
@@ -128,6 +134,7 @@ input[type="submit"].btn,
 				@include box-shadow(0px 2px 0px 0px #{darken(nth($social-colors-list, $i), 15%)});
 				// border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
 				// color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+		    transition: 0.3s all ease-in-out;
 			}
 		}
 	}
@@ -143,6 +150,7 @@ input[type="submit"].btn,
 				@include box-shadow(0px 2px 0px 0px #{darken(nth($grayscale-list, $i), 15%)});
 				// border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
 				// color: #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+		    transition: 0.3s all ease-in-out;
 			}
 		}
 	}
@@ -176,6 +184,7 @@ input[type="submit"].btn,
 				background: none;
 				border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
 				color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+				transition: 0.3s all ease-in-out;
 				i {
 					border-left: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
 				}
@@ -194,6 +203,7 @@ input[type="submit"].btn,
 				&:hover {
 					i {
 						border-right: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+				    transition: 0.3s all ease-in-out;
 					}
 				}
 			}
@@ -266,6 +276,7 @@ input[type="submit"].btn,
 				color: #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
 				i {
 					border-left: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+			    transition: 0.3s all ease-in-out;
 				}
 			}
 			&.btn-icon-left {
@@ -282,6 +293,7 @@ input[type="submit"].btn,
 				&:hover {
 					i {
 						border-right: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+				    transition: 0.3s all ease-in-out;
 					}
 				}
 			}
@@ -354,6 +366,7 @@ input[type="submit"].btn,
 				// color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
 				i {
 					border-left: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), 9%)};
+					transition: 0.3s all ease-in-out;
 				}
 			}
 			&.btn-icon-left {
@@ -370,6 +383,7 @@ input[type="submit"].btn,
 				&:hover {
 					i {
 						border-right: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+						transition: 0.3s all ease-in-out;
 					}
 				}
 			}
@@ -440,6 +454,7 @@ input[type="submit"].btn,
 				@include background(linear-gradient(#{lighten(nth($grayscale-list, $i), 7%), nth($grayscale-list, $i)} bottom repeat)); 
 				border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), 14%)};
 				// color: #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+		    transition: 0.3s all ease-in-out;
 				i {
 					border-left: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), 9%)};
 				}
@@ -458,6 +473,7 @@ input[type="submit"].btn,
 				&:hover {
 					i {
 						border-right: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+				    transition: 0.3s all ease-in-out;
 					}
 				}
 			}

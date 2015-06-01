@@ -49,9 +49,10 @@ body {
   border: 1px solid #ccc;
   height: 250px;
   // padding: 4%;
-}
-.content-text-blog-border:hover{
-  background-color:#f1f1f1 ;
+  &:hover{
+    background-color:#FBFBFB;
+    transition: 0.3s all ease-in-out;
+  }
 }
 .bg-img-block {
     background-size: cover;
@@ -71,7 +72,12 @@ body {
     border: 1px solid $brand-primary !important;
     background-color: white !important;
     color: $brand-primary;
+    transition: 0.3s all ease-in-out; 
   }
+}
+/*UPPERCASE*/
+.uppercase{
+  text-transform: uppercase;
 }
 /*BUTTONS STYLES*/
 .button-participar{
@@ -151,15 +157,151 @@ body {
   }
 }
 /*RESPONSIVE*/
-@media screen and (max-width:$screen-phone) { 
-
+@media screen and (max-width:$screen-phone) {
+  .hero-unit{
+    h2{
+      position: relative;
+      bottom: 70px;
+    }
+    .button-participar {
+      width: 50%;
+      position: relative;
+      bottom: 40px;
+    }
+  }
+  .content-responsive{
+    h3{
+      font-size: 23px;
+      position: relative;
+      bottom: 10px;
+    }
+    .subtitle-res{
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 18px;
+      padding-top: 15px;
+    }
+    .row{
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .content-border{
+      border: 1px solid #ccc;
+      padding: 30px 17px;
+      height: 200px;
+      width: 320px;
+      position: relative;
+      left: 8px;
+      h4{
+        font-size: 17px;
+      }
+      p{
+        font-size: 13px;
+      }
+      a{
+        font-size: 16px;
+       }
+     }
+    } 
+    .site-portafolio{
+      @include flex-row-center;
+      text-align: center;
+      .content-img-portafolio-grid > img {
+        width: 75%;
+        padding-top: 15px;
+      }
+      .text-content-portafolio{
+        text-align: center !important;
+        padding-left: 30px;
+        padding-right: 30px;
+        h3{
+          font-size: 25px;
+        }
+        h4{
+          font-size: 17px;
+        }
+        span{
+          font-size: 13px;
+        }
+        a{
+          font-size: 16px;
+        }
+      }
+    }
+    .site-blog{
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center !important;
+      h2{
+        font-size: 20px;
+        color : $brand-primary;
+      }
+      .bg-img-block{
+        background-position: center center;
+        height: 250px;
+        padding-top:12px ; 
+      }
+      .content-text-blog-border{
+        margin-top: 0 !important;
+        padding-left:0;
+        padding-top:0;
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+    .section-sponsors{
+      .logo-sponsors-home{
+        text-align: center;
+        img{
+          width: 50%;
+        }
+      }
+    }
+    .hero-end{
+      .container-md{
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
 }
-@media screen and (max-width:769px) {
+// @media screen and (max-width:$screen-tablet) {
+//   .title-header-responsive{
+//     position: relative;
+//     bottom: 70px;
+//     width: 260px;
+//     left: 38px;
+//     }
+//   .content-responsive{
+//     h3{
+//       font-size: 23px;
+//       position: relative;
+//       bottom: 10px;
+//     }
+//     .subtitle-res{
+//       padding-left: 15px;
+//       padding-right: 15px;
+//       font-size: 18px;
+//       padding-top: 15px;
+//     }
+//     .content-border{
+//       border: 1px solid #ccc;
+//       padding: 30px 17px;
+//       height: 200px;
+//       width: 320px;
+//       position: relative;
+//       left: 37px;
+//     }
+//   }
+//   .btn , .btn-lg {
+//     width: 50%;
+//     position: relative;
+//     bottom: 40px;
+//   }  
+// }
+// @media screen and (max-width:1025px){
 
-}
-@media screen and (max-width:1025px){
+// }
+// @media screen and (max-width:1309px){
 
-}
-@media screen and (max-width:1309px){
-
-}
+// }
