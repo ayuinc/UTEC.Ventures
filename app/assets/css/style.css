@@ -5807,6 +5807,13 @@ body::-webkit-scrollbar {
   height: 250px;
 }
 
+/*LINE*/
+.line {
+  border: 1px solid #323232;
+  width: 198px;
+  position: relative;
+}
+
 /*OVERLAY*/
 .overlay, .overlay-site-complete, .overlay-site-full {
   position: absolute;
@@ -5939,7 +5946,7 @@ body::-webkit-scrollbar {
   }
   .hero-unit h2 {
     position: relative;
-    bottom: 70px;
+    bottom: 16px;
   }
   .hero-unit .button-participar {
     width: 50%;
@@ -5958,6 +5965,7 @@ body::-webkit-scrollbar {
   }
   .content-responsive p {
     font-size: 17px;
+    padding-bottom: 3px;
   }
   .content-responsive .subtitle-res {
     padding-left: 15px;
@@ -5973,8 +5981,9 @@ body::-webkit-scrollbar {
     border: 1px solid #ccc;
     width: 300px;
     height: 179px;
+    padding: 20px 17px;
     position: relative;
-    left: 12px;
+    left: 23px;
   }
   .content-responsive .content-border h4 {
     font-size: 17px;
@@ -6029,6 +6038,7 @@ body::-webkit-scrollbar {
   }
   .site-portafolio .text-content-portafolio span {
     font-size: 14px;
+    padding-bottom: 3px;
   }
   .site-portafolio .text-content-portafolio a {
     font-size: 16px;
@@ -6053,13 +6063,17 @@ body::-webkit-scrollbar {
     padding-top: 0;
     min-height: 300px;
   }
+  .site-blog .content-text-blog-border div, .site-beneficios .content-text-blog-border div, .site-portafolio .content-text-blog-border div, .site-blog .text-blog-espacio-fisico div, .site-beneficios .text-blog-espacio-fisico div, .site-portafolio .text-blog-espacio-fisico div, .site-blog .content-text-beneficios-border div, .site-beneficios .content-text-beneficios-border div, .site-portafolio .content-text-beneficios-border div, .site-blog .content-text-portafolio-border div, .site-beneficios .content-text-portafolio-border div, .site-portafolio .content-text-portafolio-border div {
+    padding-left: 21px !important;
+  }
   .site-blog .content-text-blog-border h3, .site-beneficios .content-text-blog-border h3, .site-portafolio .content-text-blog-border h3, .site-blog .text-blog-espacio-fisico h3, .site-beneficios .text-blog-espacio-fisico h3, .site-portafolio .text-blog-espacio-fisico h3, .site-blog .content-text-beneficios-border h3, .site-beneficios .content-text-beneficios-border h3, .site-portafolio .content-text-beneficios-border h3, .site-blog .content-text-portafolio-border h3, .site-beneficios .content-text-portafolio-border h3, .site-portafolio .content-text-portafolio-border h3 {
     font-size: 17px;
   }
   .site-blog .content-text-blog-border p, .site-beneficios .content-text-blog-border p, .site-portafolio .content-text-blog-border p, .site-blog .text-blog-espacio-fisico p, .site-beneficios .text-blog-espacio-fisico p, .site-portafolio .text-blog-espacio-fisico p, .site-blog .content-text-beneficios-border p, .site-beneficios .content-text-beneficios-border p, .site-portafolio .content-text-beneficios-border p, .site-blog .content-text-portafolio-border p, .site-beneficios .content-text-portafolio-border p, .site-portafolio .content-text-portafolio-border p {
     font-size: 14px;
+    padding-bottom: 3px;
   }
-  .site-blog a, .site-beneficios a, .site-portafolio a {
+  .site-blog .content-text-blog-border a, .site-beneficios .content-text-blog-border a, .site-portafolio .content-text-blog-border a, .site-blog .text-blog-espacio-fisico a, .site-beneficios .text-blog-espacio-fisico a, .site-portafolio .text-blog-espacio-fisico a, .site-blog .content-text-beneficios-border a, .site-beneficios .content-text-beneficios-border a, .site-portafolio .content-text-beneficios-border a, .site-blog .content-text-portafolio-border a, .site-beneficios .content-text-portafolio-border a, .site-portafolio .content-text-portafolio-border a {
     width: 240px;
   }
 
@@ -6070,6 +6084,9 @@ body::-webkit-scrollbar {
     padding-left: 21px !important;
     padding-right: 0 !important;
   }
+  .site-beneficios .content-text-beneficios-border p {
+    padding-left: 0 !important;
+  }
 
   .site-portafolio .content-text-portafolio-border {
     margin-bottom: 25px;
@@ -6077,6 +6094,10 @@ body::-webkit-scrollbar {
   .site-portafolio .content-text-portafolio-border div {
     padding-left: 21px !important;
     padding-right: 0 !important;
+  }
+  .site-portafolio .content-text-portafolio-border p {
+    padding-left: 0 !important;
+    padding-bottom: 3px;
   }
 
   .section-sponsors .logo-sponsors-home, .section-reconocimientos .logo-sponsors-home {
@@ -6104,6 +6125,12 @@ body::-webkit-scrollbar {
 
   .overlay-site-full {
     height: 599px;
+  }
+
+  .line {
+    border-top: 1px solid #323232;
+    width: 198px;
+    position: relative;
   }
 
   /*ESPACIO FISICO*/
@@ -6169,7 +6196,7 @@ body::-webkit-scrollbar {
     -ms-transform: rotate(45deg) translate(6px, 10px);
     -o-transform: rotate(45deg) translate(6px, 10px);
     transform: rotate(45deg) translate(6px, 10px);
-    transition: 0.3s all ease-in-out;
+    transition: 0.2s all ease-in-out;
     height: 2px;
   }
   .menu-toggle.on .two {
@@ -6182,7 +6209,7 @@ body::-webkit-scrollbar {
     -ms-transform: rotate(-45deg) translate(1px, -7px);
     -o-transform: rotate(-45deg) translate(1px, -7px);
     transform: rotate(-45deg) translate(1px, -7px);
-    transition: 0.3s all ease-in-out;
+    transition: 0.2s all ease-in-out;
     height: 2px;
   }
 
@@ -6197,6 +6224,7 @@ body::-webkit-scrollbar {
     -webkit-transition-duration: 0.3s;
     -moz-transition-duration: 0.3s;
     transition-duration: 0.3s;
+    transition: 0.2s all ease-in-out;
   }
 
   nav ul {

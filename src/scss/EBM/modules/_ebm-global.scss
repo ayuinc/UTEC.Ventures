@@ -80,6 +80,12 @@ body {
     background-position: center;
     height: 250px;
 }
+/*LINE*/
+.line{
+  border: 1px solid #323232;
+  width: 198px;
+  position: relative;
+}
 /*OVERLAY*/
 .overlay{
   position: absolute;
@@ -202,7 +208,7 @@ body {
     height: 499px !important;
     h2{
       position: relative;
-      bottom: 70px;
+      bottom: 16px;
     }
     .button-participar {
       width: 50%;
@@ -222,6 +228,7 @@ body {
     }
     p{
       font-size: 17px;
+      padding-bottom:3px;
     }
     .subtitle-res{
       padding-left: 15px;
@@ -237,8 +244,9 @@ body {
       border: 1px solid #ccc;
       width: 300px;
       height: 179px;
+      padding: 20px 17px;
       position: relative;
-      left: 12px;
+      left: 23px;
       h4{
         font-size: 17px;
       }
@@ -266,6 +274,7 @@ body {
         }
         span{
           font-size: 14px;
+          padding-bottom:3px;
         }
         a{
           font-size: 16px;
@@ -289,16 +298,20 @@ body {
         padding-left:0;
         padding-top:0;
         min-height: 300px;
+        div{
+          padding-left: 21px !important;
+        }
         h3{
           font-size: 17px;
         }
         p{
           font-size: 14px;
-        }
+          padding-bottom: 3px;
         }
         a{
           width: 240px;
-        }
+        }  
+      }
     }
     .site-beneficios{
       @extend .site-blog;
@@ -307,6 +320,9 @@ body {
         div{
           padding-left: 21px !important;
           padding-right:0 !important;     
+        }
+        p{
+          padding-left:0 !important;
         }
       }
     }
@@ -317,6 +333,10 @@ body {
         div{
           padding-left: 21px !important;
           padding-right:0 !important;     
+        }
+        p{
+          padding-left: 0 !important;
+          padding-bottom: 3px;
         }                
       }
     }
@@ -345,6 +365,11 @@ body {
     }
     .overlay-site-full{
       height: 599px;
+    }
+    .line{
+      border-top: 1px solid #323232;
+      width: 198px;
+      position: relative;
     }
   /*ESPACIO FISICO*/
   article{
@@ -408,7 +433,7 @@ body {
     &.on {
       .one {
         @include transform(rotate(45deg) translate(6px, 10px));
-        transition: 0.3s all ease-in-out;
+        transition: 0.2s all ease-in-out;
         height: 2px;
       }
       .two {
@@ -417,7 +442,7 @@ body {
       }
       .three {
         @include transform (rotate(-45deg) translate(1px, -7px));
-        transition: 0.3s all ease-in-out;
+        transition: 0.2s all ease-in-out;
         height: 2px;
       }
     }
@@ -431,6 +456,7 @@ body {
     margin: 6px auto;
     backface-visibility: hidden;
     @include transition-duration(0.3s);
+    transition: 0.2s all ease-in-out;
   }
 
   nav ul{
