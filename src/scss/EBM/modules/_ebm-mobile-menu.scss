@@ -4,13 +4,12 @@
 	Mobile Menu
 
 */
-
 .mobile-navbar {
 	@include position(fixed, 0 0 null 0);
 	z-index: 1000;
 	width: 100%;
 	height: $mobile-navbar-height;
-	background: white;
+	background: $bg-gray-dark;
 	border-bottom: 1px solid $gray-lighter;
 	@include flex-space-between;
 	padding: 0 $container-fluid;
