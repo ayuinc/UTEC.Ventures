@@ -6017,7 +6017,7 @@ body::-webkit-scrollbar {
   }
   .site-portafolio .content-img-portafolio-grid > a > img {
     width: 75%;
-    padding-top: 16px;
+    padding-top: 18px;
   }
   .site-portafolio .text-content-portafolio {
     text-align: center !important;
@@ -6035,8 +6035,8 @@ body::-webkit-scrollbar {
   }
 
   .site-blog, .site-beneficios, .site-portafolio {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-align: center !important;
   }
   .site-blog h4, .site-beneficios h4, .site-portafolio h4 {
@@ -6123,6 +6123,17 @@ body::-webkit-scrollbar {
   .error-site, .gracias-site, .sitemap-site {
     height: 599px !important;
     font-size: 20px;
+    list-style: none;
+    text-align: center;
+  }
+  .error-site h2, .gracias-site h2, .sitemap-site h2 {
+    font-size: 40px;
+    color: white;
+  }
+  .error-site ul, .gracias-site ul, .sitemap-site ul {
+    padding-left: 0px;
+  }
+  .error-site ul li, .gracias-site ul li, .sitemap-site ul li {
     list-style: none;
   }
 

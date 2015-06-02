@@ -255,7 +255,7 @@ body {
       text-align: center;
       .content-img-portafolio-grid > a > img {
         width: 75%;
-        padding-top: 16px;
+        padding-top: 18px;
       }
       .text-content-portafolio{
         text-align: center !important;
@@ -273,8 +273,8 @@ body {
       }
     }
     .site-blog{
-      padding-left: 50px;
-      padding-right: 50px;
+      padding-left: 30px;
+      padding-right: 30px;
       text-align: center !important;
       h4{
         font-size: 20px;
@@ -368,6 +368,17 @@ body {
     height: 599px !important;
     font-size: 20px;
     list-style: none;
+    text-align: center;
+    h2{
+      font-size: 40px;
+      color: white;
+    }
+    ul {
+      padding-left: 0px;
+      li {
+      list-style: none;
+      }
+    }
   }
   /*PORTAFOLIO STARTUP*/
   .user-picture{
