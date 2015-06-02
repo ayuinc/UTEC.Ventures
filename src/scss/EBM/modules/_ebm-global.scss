@@ -34,6 +34,9 @@ body {
 .font-s-20{
   font-size: 20px;
 }
+.lh-12{
+  line-height: 1.2;
+}
 /*CONTENT STYLES*/
 .logo-sponsors-home-color > img,
 .image-content-espacio-fisico > img,
@@ -89,6 +92,9 @@ body {
 .overlay-site-complete{
   @extend .overlay;
   height: 495px;
+}
+.overlay-site-full{
+  @extend .overlay-site-complete;
 }
 /*PICTURE CUSTOM ACTORS*/
 .user-picture > img {
@@ -337,6 +343,9 @@ body {
       z-index: 10;
       background-color: rgba(0,0,0,0.4); /*dim the background*/
     }
+    .overlay-site-full{
+      height: 599px;
+    }
   /*ESPACIO FISICO*/
   article{
     p{
@@ -354,6 +363,11 @@ body {
     padding-left: 21px !important;
     padding-right:0 !important;
     }
+  }
+  .error-site , .gracias-site , .sitemap-site {
+    height: 599px !important;
+    font-size: 20px;
+    list-style: none;
   }
   /*PORTAFOLIO STARTUP*/
   .user-picture{
@@ -377,21 +391,23 @@ body {
   .menu-toggle {
     width: 28px;
     position: absolute;
-    top: 5px;
+    top: 8px;
     right: 25px;
     cursor: pointer;
     &.on {
       .one {
-        @include transform(rotate(45deg) translate(7px, 7px));
+        @include transform(rotate(45deg) translate(6px, 10px));
         transition: 0.3s all ease-in-out;
+        height: 2px;
       }
       .two {
         opacity: 0;
         transition: 0.3s all ease-in-out;
       }
       .three {
-        @include transform (rotate(-45deg) translate(8px, -10px));
+        @include transform (rotate(-45deg) translate(1px, -7px));
         transition: 0.3s all ease-in-out;
+        height: 2px;
       }
     }
   }
@@ -399,7 +415,7 @@ body {
   .two,
   .three{
     width: 100%;
-    height: 5px;
+    height: 2px;
     background: white;
     margin: 6px auto;
     backface-visibility: hidden;
@@ -433,8 +449,11 @@ body {
     display: block;
     }
   }
-  .line{
-    line: 1px solid #ccc;
+  .borde-postula-cta{
+    border: 1px solid;
+    width: 150px;
+    padding: 13px;
+    margin: 0 auto;
   }
   .menu-section {
     &.on {
