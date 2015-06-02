@@ -6168,6 +6168,11 @@ body::-webkit-scrollbar {
   .user-picture {
     padding-bottom: 25px;
   }
+
+  .custom-form {
+    background-color: transparent;
+    border: 1px solid wh;
+  }
 }
 @media screen and (max-width: 480px) {
   .menu-section-mobile {
