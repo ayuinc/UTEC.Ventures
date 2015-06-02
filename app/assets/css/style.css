@@ -5971,7 +5971,7 @@ body::-webkit-scrollbar {
   }
   .content-responsive .content-border {
     border: 1px solid #ccc;
-    width: 320px;
+    width: 300px;
     height: 179px;
     position: relative;
     left: 12px;
@@ -6057,7 +6057,7 @@ body::-webkit-scrollbar {
     font-size: 17px;
   }
   .site-blog .content-text-blog-border p, .site-beneficios .content-text-blog-border p, .site-portafolio .content-text-blog-border p, .site-blog .text-blog-espacio-fisico p, .site-beneficios .text-blog-espacio-fisico p, .site-portafolio .text-blog-espacio-fisico p, .site-blog .content-text-beneficios-border p, .site-beneficios .content-text-beneficios-border p, .site-portafolio .content-text-beneficios-border p, .site-blog .content-text-portafolio-border p, .site-beneficios .content-text-portafolio-border p, .site-portafolio .content-text-portafolio-border p {
-    font-size: 16px;
+    font-size: 14px;
   }
   .site-blog a, .site-beneficios a, .site-portafolio a {
     width: 240px;
