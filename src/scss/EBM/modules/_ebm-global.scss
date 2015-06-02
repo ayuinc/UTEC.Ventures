@@ -22,6 +22,9 @@ body {
 .font-s-13{
   font-size: 13px;
 }
+.font-s-14{
+  font-size: 14px;
+}
 .font-s-16{
   font-size: 16px;
 }
@@ -35,7 +38,7 @@ body {
 .logo-sponsors-home-color > img,
 .image-content-espacio-fisico > img,
 .logo-sponsors-home > img,
-.content-img-portafolio-grid > img,
+.content-img-portafolio-grid > a > img,
 .content-img-blog > img {
   width: 100%;
 }
@@ -54,11 +57,27 @@ body {
     transition: 0.3s all ease-in-out;
   }
 }
+.text-blog-espacio-fisico{
+  @extend .content-text-blog-border;
+}
 .bg-img-block {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 250px;
+}
+/*OVERLAY*/
+.overlay{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 384px;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.4); /*dim the background*/
+}
+.overlay-site-complete{
+  @extend .overlay;
+  height: 495px;
 }
 /*PICTURE CUSTOM ACTORS*/
 .user-picture > img {
@@ -117,11 +136,6 @@ body {
   padding-bottom: 9px;
   font-weight: 100;
 }
-/*OPACITY IMG*/
-.op-rgba{
-  background-color:black; 
-  opacity: 0.1;
-}
 /*SPONSORS FUNCTION*/
 .logo-sponsors-home{
   img{
@@ -156,9 +170,19 @@ body {
     }
   }
 }
+.hero-end{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+.up-overlay{
+  position: relative;
+  z-index: 20;
+}
 /*RESPONSIVE*/
 @media screen and (max-width:$screen-phone) {
   .hero-unit{
+    height: 499px !important;
     h2{
       position: relative;
       bottom: 70px;
@@ -170,7 +194,11 @@ body {
     }
   }
   .content-responsive{
-    h3{
+    .col-sm-6, .col-xs-12 {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      }
+    h4{
       font-size: 23px;
       position: relative;
       bottom: 10px;
@@ -178,7 +206,7 @@ body {
     .subtitle-res{
       padding-left: 15px;
       padding-right: 15px;
-      font-size: 18px;
+      font-size: 17px;
       padding-top: 15px;
     }
     .row{
@@ -187,16 +215,15 @@ body {
     }
     .content-border{
       border: 1px solid #ccc;
-      padding: 30px 17px;
-      height: 200px;
       width: 320px;
+      height: 179px;
       position: relative;
-      left: 8px;
+      left: 12px;
       h4{
         font-size: 17px;
       }
       p{
-        font-size: 13px;
+        font-size: 12px;
       }
       a{
         font-size: 16px;
@@ -206,22 +233,19 @@ body {
     .site-portafolio{
       @include flex-row-center;
       text-align: center;
-      .content-img-portafolio-grid > img {
+      .content-img-portafolio-grid > a > img {
         width: 75%;
-        padding-top: 15px;
+        padding-top: 16px;
       }
       .text-content-portafolio{
         text-align: center !important;
-        padding-left: 30px;
-        padding-right: 30px;
-        h3{
+        padding-left: 50px;
+        padding-right: 50px;
+        h4{
           font-size: 25px;
         }
-        h4{
-          font-size: 17px;
-        }
         span{
-          font-size: 13px;
+          font-size: 15px;
         }
         a{
           font-size: 16px;
@@ -229,12 +253,11 @@ body {
       }
     }
     .site-blog{
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 50px;
+      padding-right: 50px;
       text-align: center !important;
-      h2{
+      h4{
         font-size: 20px;
-        color : $brand-primary;
       }
       .bg-img-block{
         background-position: center center;
@@ -245,16 +268,24 @@ body {
         margin-top: 0 !important;
         padding-left:0;
         padding-top:0;
-        p{
-          font-size: 12px;
+        min-height: 300px;
+        h3{
+          font-size: 17px;
         }
-      }
+        p{
+          font-size: 16px;
+        }
+        }
+        a{
+          width: 240px;
+        }
     }
-    .section-sponsors{
+    .section-sponsors , .section-reconocimientos {
       .logo-sponsors-home{
         text-align: center;
         img{
           width: 50%;
+          padding-bottom:25px;
         }
       }
     }
@@ -264,6 +295,36 @@ body {
         padding-right: 30px;
       }
     }
+    .overlay{
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 499px;
+      z-index: 10;
+      background-color: rgba(0,0,0,0.4); /*dim the background*/
+    }
+  /*ESPACIO FISICO*/
+  article{
+    p{
+      text-align: center !important;
+      font-size: 16px !important;
+    }
+    blockquote{
+      span{
+        font-size: 17px;
+      }
+    }
+  }
+   .text-blog-espacio-fisico {
+    div {
+    padding-left: 21px !important;
+    padding-right:0 !important;
+    }
+  }
+  /*PORTAFOLIO STARTUP*/
+  .user-picture{
+    padding-bottom:25px;
+  }
 }
 // @media screen and (max-width:$screen-tablet) {
 //   .title-header-responsive{

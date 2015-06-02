@@ -1,7 +1,7 @@
 /* 
 	Hero unit
 */
-$hero-unit-height: 630px; // Hero Unit and Videocover
+$hero-unit-height: 495px; // Hero Unit and Videocover
 .hero-unit {
 	@include bg-img-control-center;
 	height: $hero-unit-height;

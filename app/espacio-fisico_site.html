@@ -16,7 +16,7 @@
   </head>
   <body>
     <div class="site-wrapper"> <!-- Body -->
-      <header class="tool-bar">
+      <header class="tool-bar hidden-xs hidden-sm">
         <div class="container-fluid ph-35">
           <div class="row">
             <div class="tool-bar-left col-sm-5">
@@ -47,7 +47,7 @@
           </div>
         </div>
       </header>
-      <header class="header-scroll header">
+      <header class="header-scroll header hidden-xs hidden-sm">
         <div class="container">
           <div class="row">
             <div class="header-left col-sm-3 text-center">
@@ -66,7 +66,7 @@
           </div>
         </div>
       </header>
-      <header class="header" >
+      <header class="header hidden-xs hidden-sm" >
         <div class="container">
           <div class="row">
             <div class="header-left col-sm-3 text-center">
@@ -85,14 +85,15 @@
           </div>
         </div>
       </header>
+      <div class="overlay-site-complete"></div>
       <section class="hero-unit flex-column-end" style="background-image: url(assets/img/espaciofisico.jpg)">
-        <div class="container-md text-center pv-70">
+        <div class="container-md text-center pv-70 up-overlay">
           <h2 class="light text-white ">Espacio Fisíco</h2>
           <span class="thin text-white font-s-20">Las Startups seleccionadas contarán con un espacio de trabajo <br> durante los 6 meses que dura el programa de aceleración.</span>
         </div>
-        <div class="scroll-down"><div><a id="arrow" href="#site-content"><img src="assets/icons/PNG/arrow-down-2.png" alt=""></a></div></div>
+        <div class="scroll-down up-overlay"><div><a id="arrow" href="#site-espacio"><img src="assets/icons/PNG/arrow-down-2.png" alt=""></a></div></div>
       </section>
-      <section class="bg-white">
+      <section class="bg-white" id="site-espacio">
         <article>
           <div class="container-sm text-left thin text-gray pv-70">
             <p class="font-s-20 thin text-gray ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium, reprehenderit quod blanditiis quibusdam, aut aperiam, nostrum illo dolorem odit earum sint, excepturi esse! Laboriosam inventore facere autem quia nihil.</p>
@@ -123,36 +124,37 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-md-3 mt-21 pr-0 flex-row-center bg-img-block " style="background-image: url(assets/img/mac1.jpg)"> 
+            <div class="col-md-4 mt-21 pr-0 flex-row-center bg-img-block " style="background-image: url(assets/img/mac1.jpg)"> 
             </div>
-            <div class="col-md-9  content-text-blog-border mt-21 pt-21 pl-0">
+            <div class="col-md-8 text-blog-espacio-fisico mt-21 pt-35 pl-0">
               <div class="text-left pl-70 pr-70">
-                <h3 class="text-primary thin">Titulo del Articulo</h3>
-                <p class="text-gray thin font-s-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciun.</p><br>  
-                <a class="thin font-s-18" href="portafolio-perfilstartup-equipo_site.html">Lee Mas <span>&#187;</span></a>
+                <h4 class="text-primary thin">Titulo del Articulo</h4>
+                <p class="text-gray thin font-s-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciun.</p><br>  
+                <a class="thin font-s-14" href="portafolio-perfilstartup-equipo_site.html">Lee Mas <span>&#187;</span></a>
               </div>
             </div>
-            <div class="col-md-3 mt-21 pr-0 flex-row-center bg-img-block " style="background-image: url(assets/img/mac1.jpg)"> 
+            <div class="col-md-4 mt-21 pr-0 flex-row-center bg-img-block " style="background-image: url(assets/img/mac1.jpg)"> 
             </div>
-            <div class="col-md-9  content-text-blog-border mt-21 pt-21 pl-0">
+            <div class="col-md-8 text-blog-espacio-fisico mt-21 pt-35 pl-0">
               <div class="text-left pl-70 pr-70">
-                <h3 class="text-primary thin">Titulo del Articulo</h3>
-                <p class="text-gray thin font-s-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciun.</p><br>  
-                <a class="thin font-s-18" href="portafolio-perfilstartup-equipo_site.html">Lee Mas <span>&#187;</span></a>
+                <h4 class="text-primary thin">Titulo del Articulo</h4>
+                <p class="text-gray thin font-s-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae laborum, voluptates culpa omnis pariatur nemo quidem totam itaque quisquam nihil, vero modi ea, sed sint odit officiis blanditiis fugiat nesciun.</p><br>  
+                <a class="thin font-s-14" href="portafolio-perfilstartup-equipo_site.html">Lee Mas <span>&#187;</span></a>
               </div>
             </div>
           </div>
           <div class="row pb-42 mb-49 ">
             <div class="col-sm-12 mt-35 flex-row-center ">
-              <div class="button-border ">
-                <a class="mt-7 btn thin text-gray font-s-16" href="">Lee Todos <span>&#187;</span></a>
+              <div>
+                <a href="" class="btn btn-lg btn-primary light text-white uppercase font-s-13">Lee Todos <span>&#187;</span></a>
               </div>
             </div>
           </div> 
         </div>
       </section>
-      <section class="hero-end" style="background-image: url(assets/img/mac3.jpg)">
-        <div class="container-md text-center pv-70">
+      <div class="overlay"></div>
+      <section class="hero-end" style="background-image: url(assets/img/hero-end.jpg)">
+        <div class="container-md text-center pv-70 up-overlay">
           <h2 class="light text-white thin">Postula a UTEC Ventures</h2>
           <p class=" text-white mb-14 thin font-s-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa maiores quidem culpa id a dolores mollitia dolor consectetur laborum, laudantium reiciendis molestiae corporis voluptates inventore quasi perferendis facere natus autem.</p><br><br> 
           <a href="postulacion_site.html" class="btn btn-lg btn-primary thin">Comienza aquí</a>

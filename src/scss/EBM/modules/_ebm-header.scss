@@ -76,7 +76,7 @@ $tool-bar-height-control: 43px; // Header
   position: fixed;
   opacity: 0;
   transition: 0.3s all ease-in-out; 
-  z-index: 10;
+  z-index: 40;
   top: 0;
   &.active {
     opacity: 1; 
@@ -91,6 +91,8 @@ $tool-bar-height-control: 43px; // Header
 	height: $tool-bar-height-control;
 	min-height: $tool-bar-height-control;
 	font-size:12px;
+	position: relative;
+  z-index: 50;
 	.tool-bar-left,
 	.tool-bar-right {
 		min-height: $tool-bar-height-control;
