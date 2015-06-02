@@ -5781,11 +5781,11 @@ body::-webkit-scrollbar {
   width: 356px;
 }
 
-.content-text-blog-border, .text-blog-espacio-fisico {
+.content-text-blog-border, .text-blog-espacio-fisico, .content-text-beneficios-border, .content-text-portafolio-border {
   border: 1px solid #ccc;
   height: 250px;
 }
-.content-text-blog-border:hover, .text-blog-espacio-fisico:hover {
+.content-text-blog-border:hover, .text-blog-espacio-fisico:hover, .content-text-beneficios-border:hover, .content-text-portafolio-border:hover {
   background-color: #FBFBFB;
   transition: 0.3s all ease-in-out;
 }
@@ -5952,6 +5952,9 @@ body::-webkit-scrollbar {
     position: relative;
     bottom: 10px;
   }
+  .content-responsive p {
+    font-size: 17px;
+  }
   .content-responsive .subtitle-res {
     padding-left: 15px;
     padding-right: 15px;
@@ -6014,46 +6017,62 @@ body::-webkit-scrollbar {
   }
   .site-portafolio .text-content-portafolio {
     text-align: center !important;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .site-portafolio .text-content-portafolio h4 {
     font-size: 25px;
   }
   .site-portafolio .text-content-portafolio span {
-    font-size: 15px;
+    font-size: 14px;
   }
   .site-portafolio .text-content-portafolio a {
     font-size: 16px;
   }
 
-  .site-blog {
+  .site-blog, .site-beneficios, .site-portafolio {
     padding-left: 50px;
     padding-right: 50px;
     text-align: center !important;
   }
-  .site-blog h4 {
+  .site-blog h4, .site-beneficios h4, .site-portafolio h4 {
     font-size: 20px;
   }
-  .site-blog .bg-img-block {
+  .site-blog .bg-img-block, .site-beneficios .bg-img-block, .site-portafolio .bg-img-block {
     background-position: center center;
     height: 250px;
     padding-top: 12px;
   }
-  .site-blog .content-text-blog-border, .site-blog .text-blog-espacio-fisico {
+  .site-blog .content-text-blog-border, .site-beneficios .content-text-blog-border, .site-portafolio .content-text-blog-border, .site-blog .text-blog-espacio-fisico, .site-beneficios .text-blog-espacio-fisico, .site-portafolio .text-blog-espacio-fisico, .site-blog .content-text-beneficios-border, .site-beneficios .content-text-beneficios-border, .site-portafolio .content-text-beneficios-border, .site-blog .content-text-portafolio-border, .site-beneficios .content-text-portafolio-border, .site-portafolio .content-text-portafolio-border {
     margin-top: 0 !important;
     padding-left: 0;
     padding-top: 0;
     min-height: 300px;
   }
-  .site-blog .content-text-blog-border h3, .site-blog .text-blog-espacio-fisico h3 {
+  .site-blog .content-text-blog-border h3, .site-beneficios .content-text-blog-border h3, .site-portafolio .content-text-blog-border h3, .site-blog .text-blog-espacio-fisico h3, .site-beneficios .text-blog-espacio-fisico h3, .site-portafolio .text-blog-espacio-fisico h3, .site-blog .content-text-beneficios-border h3, .site-beneficios .content-text-beneficios-border h3, .site-portafolio .content-text-beneficios-border h3, .site-blog .content-text-portafolio-border h3, .site-beneficios .content-text-portafolio-border h3, .site-portafolio .content-text-portafolio-border h3 {
     font-size: 17px;
   }
-  .site-blog .content-text-blog-border p, .site-blog .text-blog-espacio-fisico p {
+  .site-blog .content-text-blog-border p, .site-beneficios .content-text-blog-border p, .site-portafolio .content-text-blog-border p, .site-blog .text-blog-espacio-fisico p, .site-beneficios .text-blog-espacio-fisico p, .site-portafolio .text-blog-espacio-fisico p, .site-blog .content-text-beneficios-border p, .site-beneficios .content-text-beneficios-border p, .site-portafolio .content-text-beneficios-border p, .site-blog .content-text-portafolio-border p, .site-beneficios .content-text-portafolio-border p, .site-portafolio .content-text-portafolio-border p {
     font-size: 16px;
   }
-  .site-blog a {
+  .site-blog a, .site-beneficios a, .site-portafolio a {
     width: 240px;
+  }
+
+  .site-beneficios .content-text-beneficios-border {
+    margin-bottom: 25px;
+  }
+  .site-beneficios .content-text-beneficios-border div {
+    padding-left: 21px !important;
+    padding-right: 0 !important;
+  }
+
+  .site-portafolio .content-text-portafolio-border {
+    margin-bottom: 25px;
+  }
+  .site-portafolio .content-text-portafolio-border div {
+    padding-left: 21px !important;
+    padding-right: 0 !important;
   }
 
   .section-sponsors .logo-sponsors-home, .section-reconocimientos .logo-sponsors-home {
