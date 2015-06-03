@@ -205,6 +205,9 @@ body {
 }
 /*RESPONSIVE*/
 @media screen and (max-width:$screen-phone) {
+  .overlay-site-complete{
+    height: 456px !important;
+  }
   .hero-unit{
     height: 455px !important;
     h2{
@@ -354,7 +357,7 @@ body {
       }
     }
     .hero-end{
-      height: 503px;
+      height: 509px;;
       padding-bottom: 0 !important;
       .container-md{
         padding-left: 30px;
@@ -365,17 +368,17 @@ body {
       position: absolute;
       left: 0;
       width: 100%;
-      height: 455px;
+      height: 509px; !important;
       z-index: 10;
       background-color: rgba(0,0,0,0.4); /*dim the background*/
-    }
-    .overlay-site-full{
-      height: 599px;
     }
     .line{
       border-top: 1px solid #323232;
       width: 198px;
       position: relative;
+    }
+    .italic{
+      font-style: italic;
     }
   /*ESPACIO FISICO*/
   article{
