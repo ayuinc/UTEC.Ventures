@@ -206,7 +206,7 @@ body {
 /*RESPONSIVE*/
 @media screen and (max-width:$screen-phone) {
   .hero-unit{
-    height: 499px !important;
+    height: 455px !important;
     h2{
       position: relative;
       bottom: 16px;
@@ -246,7 +246,7 @@ body {
     }
     .content-border{
       border: 1px solid #ccc;
-      width: 300px;
+      width: 299px;
       h4{
         font-size: 17px;
       }
@@ -257,12 +257,16 @@ body {
         font-size: 16px;
        }
      }
+     .center{
+      margin: 0 auto;
+      width: auto;
+     }
     } 
     .site-portafolio{
       @include flex-row-center;
       text-align: center;
       .content-img-portafolio-grid > a > img {
-        width: 75%;
+        width: 250px;
         padding-top: 18px;
       }
       .text-content-portafolio{
@@ -350,6 +354,8 @@ body {
       }
     }
     .hero-end{
+      height: 503px;
+      padding-bottom: 0 !important;
       .container-md{
         padding-left: 30px;
         padding-right: 30px;
@@ -359,7 +365,7 @@ body {
       position: absolute;
       left: 0;
       width: 100%;
-      height: 499px;
+      height: 455px;
       z-index: 10;
       background-color: rgba(0,0,0,0.4); /*dim the background*/
     }
