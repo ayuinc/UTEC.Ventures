@@ -48,6 +48,7 @@ body {
 .content-border{
   border: 1px solid #ccc;
   padding: 30px 17px;
+  margin: 10px;
   height: 179px;
   width: 356px;
 }
@@ -217,6 +218,9 @@ body {
     }
   }
   .content-responsive{
+      padding-left: 30px;
+      padding-right: 30px;
+      text-align: center !important;
     .col-sm-6, .col-xs-12 {
       padding-left: 0 !important;
       padding-right: 0 !important;
@@ -243,10 +247,6 @@ body {
     .content-border{
       border: 1px solid #ccc;
       width: 300px;
-      height: 179px;
-      padding: 20px 17px;
-      position: relative;
-      left: 23px;
       h4{
         font-size: 17px;
       }
@@ -506,5 +506,6 @@ body {
     }
   }
 }
+
 
 

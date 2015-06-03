@@ -5781,6 +5781,7 @@ body::-webkit-scrollbar {
 .content-border {
   border: 1px solid #ccc;
   padding: 30px 17px;
+  margin: 10px;
   height: 179px;
   width: 356px;
 }
@@ -5954,6 +5955,11 @@ body::-webkit-scrollbar {
     bottom: 40px;
   }
 
+  .content-responsive {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center !important;
+  }
   .content-responsive .col-sm-6, .content-responsive .col-xs-12 {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -5980,10 +5986,6 @@ body::-webkit-scrollbar {
   .content-responsive .content-border {
     border: 1px solid #ccc;
     width: 300px;
-    height: 179px;
-    padding: 20px 17px;
-    position: relative;
-    left: 23px;
   }
   .content-responsive .content-border h4 {
     font-size: 17px;
