@@ -137,7 +137,16 @@ body {
   height: 45px;
   width: 214px;
 }
-
+/*VIDEO STYLE*/
+.content-video{
+  position: relative;
+  top: 60px;
+}
+.video-style{
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 /*INPUT STYLE*/
 .input-form-postulacion{
   height: 42px;
