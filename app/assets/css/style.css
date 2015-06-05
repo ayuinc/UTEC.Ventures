@@ -5734,10 +5734,6 @@ html,
 body {
   background-color: #fff;
 }
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  display: none;
-}
 
 .fixed {
   position: fixed;
@@ -5938,6 +5934,10 @@ body::-webkit-scrollbar {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.social-icons-footer > a > img {
+  width: 20px;
 }
 
 .up-overlay {

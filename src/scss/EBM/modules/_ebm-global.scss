@@ -10,9 +10,6 @@ $user-card-width: 70px;
 html,
 body {
 	background-color: $body-bg;	
-	&::-webkit-scrollbar { 
-    display: none; 
-	}
 }
 .fixed{
   position:fixed;
@@ -203,6 +200,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;  
+}
+.social-icons-footer > a > img {
+  width: 20px;
 }
 .up-overlay{
   position: relative;
