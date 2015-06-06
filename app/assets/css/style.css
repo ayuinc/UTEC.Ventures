@@ -6141,11 +6141,11 @@ body {
   }
   .video-style .content-video {
     position: relative;
-    top: 22px;
+    top: 21px;
   }
   .video-style .content-video iframe {
-    width: 242px;
-    height: 136px;
+    width: 227px;
+    height: 125px;
   }
 
   .about-us-grid {
