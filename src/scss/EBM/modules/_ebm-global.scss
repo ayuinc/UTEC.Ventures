@@ -381,12 +381,13 @@ body {
   }
   .video-style{
     height: 240px;
+    background-image: none !important;
     .content-video{
       position: relative;
       top: 21px;
       iframe {
-        width: 227px;
-        height: 125px;
+        width: 100%;
+        height: 176px;
       }
     }
   }
