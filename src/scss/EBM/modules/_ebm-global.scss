@@ -385,10 +385,21 @@ body {
       position: relative;
       top: 22px;
       iframe {
-        width: 255px;
-        height: 142px;
+        width: 242px;
+        height: 136px;
       }
     }
+  }
+  .about-us-grid{
+    padding-left: 30px;
+    padding-right: 30px;
+    .col-sm-4{
+      padding-left: 0 !important;
+      padding-right: 0 !important;      
+    }
+  }
+  .btn-lg{
+    padding:7px !important;
   }
   .content-responsive{
       padding-left: 30px;
