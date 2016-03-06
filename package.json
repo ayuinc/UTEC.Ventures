@@ -2,7 +2,7 @@
   "name": "EBM",
   "title": "Easy Box Model boilerplate",
   "url": "http://soygus.com",
-  "author": "@MadeByGus",
+  "author": "@MadebyGus",
   "copyright": "2015",
   "version": "1.1.0",
   "license": "MIT",
@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "bower": "latest",
-    "connect-livereload": "latest",
+    "connect-livereload": "^0.5.4",
     "grunt": "latest",
     "grunt-autoprefixer": "latest",
     "grunt-bower-task": "latest",
@@ -25,12 +25,12 @@
     "grunt-contrib-sass": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
+    "grunt-open": "latest",
     "grunt-responsive-images": "latest",
     "grunt-responsive-images-extender": "latest",
-    "grunt-open": "latest",
-    "matchdep": "latest",    
-    "pgwbrowser": "latest",
-    "logdown": "latest"
+    "logdown": "latest",
+    "matchdep": "latest",
+    "pgwbrowser": "latest"
   },
   "scripts": {
     "postinstall": "node_modules/.bin/bower install"

@@ -32,10 +32,8 @@ $hero-unit-height: 495px; // Hero Unit and Videocover
 		a {
 			@include flex-column-center;
 			@include flex-align-center;
-			background-color: $brand-primary;
-			color: white;
-			height: 35px;
-			width: 35px;
+			height: 70px;
+			width: 110px;
 		}
 	}
 }

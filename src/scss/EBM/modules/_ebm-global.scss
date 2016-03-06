@@ -20,6 +20,7 @@ body {
 .site-content {
 	position: relative;
 }
+/*CAROUSEL*/
 /*FONT SIZES*/
 .font-s-13{
   font-size: 13px;
@@ -94,7 +95,7 @@ body {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 372px;
+  height: 359px;
   z-index: 10;
   background-color: rgba(0,0,0,0.5);
 }
@@ -125,9 +126,6 @@ body {
   text-transform: uppercase;
 }
 /*BUTTONS STYLES*/
-.button-participar{
-  width: 18%;
-}
 .button-cta{
   height: 39px;
   width: 19%;
@@ -177,8 +175,8 @@ body {
     opacity: 0.8;
   }
 }
-.logo-sponsors-home {
-  img{
+.logo-sponsors-home{
+  img {
     filter: url('#grayscale');
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
